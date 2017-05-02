@@ -1,18 +1,17 @@
 # Auction APP
 
 ### Why an Auction APP?
-##### + Many of us have unwanted things laying around our home and either throw
-#### + throw them out or just them as old rags.
-#### + Now, instead of getting rid of these unwanted clothes, we are now able to offer users the chance make some quick cash buy selling old and wanted clothes here on Auction APP.
+#####  Many of us have unwanted things laying around our home and either throw
+####  throw them out or just them as old rags.
+####  Now, instead of getting rid of these unwanted clothes, we are now able to offer users the chance make some quick cash buy selling old and wanted clothes here on Auction APP.
 
 
 
 ### Wireframe
 
+![wireframe](./wireframe_1.jpg)
 
-
-
-
+![wireframe](./wireframe_2.jpg)
 
  Item Type.
 
