@@ -39,10 +39,10 @@
  ##### I am building this app for people who enjoy cleaning out their closet to get rid of unwanted things from their home to make some of their money back. After moving out, I realized that I had way too many things that I wasn't using. One day, I decided to gather it all up and starting posting on eBay.com and soon after, this became more of a hobbie than "getting rid" of things.
 
  ### Advanced Feature (Post MVP)
- ..* Add Photos.
- ..* User Authentication.
- ..* Third Party API (findProduct API-eBay).
- ..* Time left feature.
+1. Add Photos.
+2. User Authentication.
+3. Third Party API (findProduct API-eBay).
+4. Time left feature.
 
 
 
