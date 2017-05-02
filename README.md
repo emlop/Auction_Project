@@ -1,13 +1,11 @@
 # Auction APP
 
 ### Why an Auction APP?
-#####  Many of us have unwanted things laying around our home and either throw
-####  throw them out or just them as old rags.
-####  Now, instead of getting rid of these unwanted clothes, we are now able to offer users the chance make some quick cash buy selling old and wanted clothes here on Auction APP.
+#####  Many of us have unwanted things laying around our home and either throw them out or just them as old rags. Now, instead of getting rid of these unwanted clothes, we are now able to offer users the chance make some quick cash buy selling old and wanted clothes here on Auction APP.
 
 
 
-### Wireframe
+# Wireframe
 
 ![wireframe](./wireframe_1.jpg)
 
@@ -34,10 +32,10 @@
  |   4      |  auto        |     
 
 
- ### Building Auction App
+ # Building Auction App
  ##### I am building this app for people who enjoy cleaning out their closet to get rid of unwanted things from their home to make some of their money back. After moving out, I realized that I had way too many things that I wasn't using. One day, I decided to gather it all up and starting posting on eBay.com and soon after, this became more of a hobbie than "getting rid" of things.
 
- ### Advanced Feature (Post MVP)
+ # Advanced Feature (Post MVP)
 1. Add Photos.
 2. User Authentication.
 3. Third Party API (findProduct API-eBay).
