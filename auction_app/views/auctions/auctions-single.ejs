@@ -1,0 +1,14 @@
+<% include ../partials/boilerplate %>
+
+<div class='single-auction'>
+  <h3><%= auction.item %></h3>
+  <div class='meta'>
+    <span class='description'><%= auction.description %></span>
+    <span class='status'><%= auction.status %></span>
+    <span class='categories'><%= auction.categories %></span>
+  </div>
+</div>
+
+<a href='/auctions'>Back to auction index</a>
+
+<% include ../partials/end %>

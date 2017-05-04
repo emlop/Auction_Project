@@ -49,6 +49,12 @@ app.get('/', function(req, res){
     message: 'Hola',
     documentTitle: 'Auction App',
     subTitle: 'Selling you old stuff here',
+    auctionItems: [
+      'jeans',
+      'playstation 4 pro',
+      'legos',
+      'honda civic',
+    ],
   });
 });
 app.use('/auctions', auctionRoutes);
