@@ -1,21 +1,25 @@
-INSERT INTO item_type (item, description, status) VALUES
+INSERT INTO item_type (item, description, status, category_id) VALUES
 (
   'Jeans',
   'Blue jeans',
-  'Active'
+  'Active',
+  1
 ),
 (
   'Playstation 4 Pro',
   'Video Game Console',
-  'Active'
+  'Active',
+  2
 ),
 (
   'Legos',
   'Star War Set',
-  'Buy it'
+  'Buy it',
+  3
 ),
 (
   'Honda Civic',
   'Old Junk',
-  'Active'
+  'Active',
+  4
 );

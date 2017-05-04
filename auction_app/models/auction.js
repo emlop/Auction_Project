@@ -3,7 +3,7 @@ const db = require('../db/config');
 const Auction = {};
 
 Auction.findAll = () => {
-  return db.query('SELECT * FROM auctions ORDER BY id ASC');
+  return db.query('SELECT * FROM item_type JOIN category ON item_type.category_id = category.id');
 };
 
 Auction.findById = id => {

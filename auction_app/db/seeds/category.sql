@@ -1,4 +1,4 @@
-INSERT INTO categories VALUES
+INSERT INTO category (categories) VALUES
   ('fashion'),
   ('electronics'),
   ('toys'),

@@ -5,19 +5,18 @@
   <h3><%= subTitle %></h3>
 </div>
 
-<% if (showMore === true) { %>
 <div class='more'>
 <p>Auction App, a marketplace where you sell your old junk or new stuff, we don't judge</p>
 </div>
-<% } %>
 
-<p>Items for sell <% auctionItems.forEach(item, index) { %>
+
+<p>Items for sell <% auctionItems.forEach(function(item, index) { %>
   <% if (index !== auctionItems.length -1) { %>
-    <% = item %>,
+    <%= item %>,
   <% } else { %>
     <%- item -%>
   <% } %>
-<%}) -%>.</p>
+<% }) -%>.</p>
 
 <a href='/auctions'>Check out all the auctions</a>
 

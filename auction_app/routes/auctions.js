@@ -1,5 +1,5 @@
 const express = require('express');
-const controller = require('../controller/auctionController');
+const controller = require('../controllers/auctionController');
 
 const auctionsRoutes = express.Router();
 
@@ -14,4 +14,6 @@ auctionsRoutes.get('/edit/:id', controller.edit);
 auctionsRoutes.get('/:id', controller.show);
 auctionsRoutes.post('/', controller.create);
 auctionsRoutes.put('/:id', controller.update);
-auctionsRoutes.delete('/:id', controller.destory);
+auctionsRoutes.delete('/:id', controller.destroy);
+
+module.exports = auctionsRoutes;

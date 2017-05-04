@@ -1,4 +1,4 @@
-const Auction = require('..models/auction');
+const Auction = require('../models/auction');
 
 const controller = {};
 
@@ -62,9 +62,7 @@ controller.update = (req, res) => {
       item: req.body.item,
       description: req.body.description,
       status: req.body.status,
-    },
-    req.params.id
-  )
+    }, req.params.id)
   .then(auction => {
     res.redirect('/auctions');
   })

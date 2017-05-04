@@ -2,9 +2,10 @@
 
 CREATE TABLE IF NOT EXISTS item_type (
   id BIGSERIAL PRIMARY KEY,
-  item VARCHAR(255)
-  description VARCHAR(255),
-  status VARCHAR(32)
+  item VARCHAR(255),
+  description TEXT,
+  status VARCHAR(32),
+  category_id INTEGER REFERENCES category
 );
 
 CREATE TABLE IF NOT EXISTS category (
