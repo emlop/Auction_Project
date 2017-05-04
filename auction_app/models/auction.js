@@ -3,7 +3,7 @@ const db = require('../db/config');
 const Auction = {};
 
 Auction.findAll = () => {
-  return db.query('SELECT * FROM item_type LEFT JOIN category ON item_type.category_id = category.id');
+  return db.query('SELECT * FROM item_type ORDER BY id ASC');
 };
 
 Auction.findById = id => {
@@ -37,7 +37,7 @@ Auction.update = (auction, id) => {
   );
 };
 
-Auction.destory = id => {
+Auction.destroy = id => {
   return db.none(
     `
     DELETE FROM item_type
