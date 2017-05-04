@@ -3,7 +3,7 @@ const db = require('../db/config');
 const Auction = {};
 
 Auction.findAll = () => {
-  return db.query('SELECT * FROM item_type JOIN category ON item_type.category_id = category.id');
+  return db.query('SELECT * FROM item_type LEFT JOIN category ON item_type.category_id = category.id');
 };
 
 Auction.findById = id => {
@@ -11,36 +11,36 @@ Auction.findById = id => {
 };
 
 Auction.create = auction => {
+  console.log(auction);
   return db.one(
     `
     INSERT INTO item_type
-    (item, description, status)
-    VALUES ($1, $2, $3) RETURNING *
+    (item, description, status, category_id)
+    VALUES ($1, $2, $3, $4) RETURNING *
     `,
-    [auction.item, auction.description, auction.status]
+    [auction.item, auction.description, auction.status, auction.category_id]
   );
 };
 
 Auction.update = (auction, id) => {
   return db.oneOrNone(
     `
-    UPDATE auctions SET
+    UPDATE item_type SET
     item = $1,
     description = $2,
     status = $3,
-    categories = $4,
-    category_id = $5,
-    WHERE id = $6
+    category_id = $4
+    WHERE id = $5
     `,
     [auction.item, auction.description, auction.status,
-    auction.categories, auction.category_id, id]
+    auction.category_id, id]
   );
 };
 
 Auction.destory = id => {
   return db.none(
     `
-    DELETE FROM auctions
+    DELETE FROM item_type
     WHERE id = $1
     `,
     [id]

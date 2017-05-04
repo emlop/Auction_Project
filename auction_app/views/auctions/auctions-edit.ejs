@@ -1,11 +1,11 @@
 <% include ../partials/boilerplate %>
-
+<% console.log(auction) %>
 <form method='POST' action='/auctions/<%= id%>?_method=PUT'>
-  <input name'item' type='text' value='<% auction.item %>' />
-  <input name'description' type='text' value='<% auction.description %>' />
-  <input name'status' type='text' value='<% auction.status %>' />
-  <input name'categories' type='text' value='<% auction.categories %>' />
-  <input name='submit' value='Sell it' />
+  <input name='item' type='text' value='<%= auction.item %>' />
+  <input name='description' type='text' value='<%= auction.description %>' />
+  <input name='status' type='text' value='<%= auction.status %>' />
+  <input name='category_id' type='text' value='<%= auction.category_id %>' />
+  <input type='submit' value='Edit' />
 </form>
 
 <% include ../partials/end %>

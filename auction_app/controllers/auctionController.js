@@ -29,10 +29,12 @@ controller.show = (req, res) => {
 };
 
 controller.create = (req, res) => {
+  console.log('hello');
   Auction.create({
     item: req.body.item,
     description: req.body.description,
     status: req.body.status,
+    category_id: req.body.category_id
   })
   .then(auction => {
     res.redirect('/auctions');
@@ -62,6 +64,7 @@ controller.update = (req, res) => {
       item: req.body.item,
       description: req.body.description,
       status: req.body.status,
+      category_id: req.body.category_id
     }, req.params.id)
   .then(auction => {
     res.redirect('/auctions');
