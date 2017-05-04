@@ -7,13 +7,13 @@ Auction.findAll = () => {
 };
 
 Auction.findById = id => {
-  return db.oneOrNone('SELECT * FROM auctions WHERE id = $1', [id]);
+  return db.oneOrNone('SELECT * FROM item_type WHERE id = $1', [id]);
 };
 
 Auction.create = auction => {
   return db.one(
     `
-    INSERT INTO auctions
+    INSERT INTO item_type
     (item, description, status)
     VALUES ($1, $2, $3) RETURNING *
     `,
