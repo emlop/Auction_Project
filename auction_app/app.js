@@ -14,7 +14,7 @@ require('dotenv').config();
 const app = express();
 
 /* importing route */
-const auctionRoutes = require('.routes/auctions');
+const auctionRoutes = require('./routes/auctions');
 
 /* setting up port & listen */
 const PORT = process.env.PORT || 3000;
