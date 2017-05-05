@@ -47,4 +47,5 @@ Auction.destroy = id => {
   );
 };
 
+
 module.exports = Auction;

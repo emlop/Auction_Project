@@ -84,4 +84,10 @@ controller.destroy = (req, res) => {
     });
 };
 
+controller.categories = (req, res) => {
+      res.render('auctions/auctions-add', {
+        documentTitle: 'Auction App'
+      });
+}
+
 module.exports = controller;

@@ -4,11 +4,7 @@ const controller = require('../controllers/auctionController');
 const auctionsRoutes = express.Router();
 
 auctionsRoutes.get('/', controller.index);
-auctionsRoutes.get('/add', (req, res) => {
-  res.render('auctions/auctions-add', {
-    documentTitle: 'Auction App!',
-  });
-});
+auctionsRoutes.get('/add', controller.categories);
 
 auctionsRoutes.get('/edit/:id', controller.edit);
 auctionsRoutes.get('/:id', controller.show);
