@@ -1,6 +1,8 @@
 <% include ../partials/boilerplate %>
 
-<a href='/auctions/add'>Sell something!</a>
+<a name='top'></a>
+
+<a href='/auctions/add' class='sell'>Sell something!</a>
 
 <div class='auctions'>
 
@@ -8,9 +10,7 @@
     <div class='listing'>
       <h3><%= auction.item %></h3>
       <div class='meta'>
-        <!--<span class='description'><%= auction.description %></span>-->
         <span class='status'><%= auction.status %></span>
-        <!--<span class='categories'><%= auction.categories %></span>-->
       </div>
       <a href='/auctions/<%= auction.id %>'>Go to auction</a>
       <a href='/auctions/edit/<%= auction.id %>'>Edit auction</a>
@@ -19,6 +19,10 @@
       </form>
     </div>
   <% }) %>
+
+<a href='#top' class='top'>Back to top</a>
+
 </div>
+
 
 <% include ../partials/end %>

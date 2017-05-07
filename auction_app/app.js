@@ -35,6 +35,11 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
+const keyPublishable = process.env.PUBLISHABLE_KEY;
+const keySecret = process.env.SECRET_KEY;
+const stripe = require("stripe")(keySecret);
+const RapidAPI = new require('rapidapi-connect');
+const rapid = new RapidAPI('Auction', 'fe12ae8b-57d5-499c-9548-dc9b4c2540d1')
 // app.use(session({
 //   secret: process.env.SECRET_KEY,
 //   resave: false,
@@ -46,9 +51,9 @@ app.use(methodOverride('_method'));
 /* setting up routes */
 app.get('/', function(req, res){
   res.render('index', {
-    message: 'Hola',
+    message: 'Welcome!',
     documentTitle: 'Auction App',
-    subTitle: 'Selling you old stuff here',
+    subTitle: 'Selling your old stuff here',
     auctionItems: [
       'jeans',
       'playstation 4 pro',

@@ -6,9 +6,21 @@
     <span class='description'><%= auction.description %></span>
     <span class='status'><%= auction.status %></span>
     <span class='categories'><%= auction.categories %></span>
+    <form action="/your-server-side-code" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_tt9yYoSnbo3jerG6qXUF1yyM"
+    data-amount="999"
+    data-name="Stripe.com"
+    data-description="Widget"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto"
+    data-zip-code="true">
+  </script>
+</form>
   </div>
 </div>
 
-<a href='/auctions'>Back to auction index</a>
+<a href='/auctions' class='back-to'>Back to auction index</a>
 
 <% include ../partials/end %>

@@ -32,7 +32,9 @@
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "pg-promise": "^5.6.7",
-    "start": "^5.1.0"
+    "rapidapi-connect": "0.0.4",
+    "start": "^5.1.0",
+    "stripe": "^4.18.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

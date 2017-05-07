@@ -1,4 +1,5 @@
 <% include ../partials/boilerplate %>
+
 <% console.log(auction) %>
 <form method='POST' action='/auctions/<%= id%>?_method=PUT'>
   <input name='item' type='text' value='<%= auction.item %>' />
@@ -10,7 +11,6 @@
     <option value='categories_id'>Toys</option>
     <option value='categories_id'>Auto</option>\
   </select>
-  <!--<input name='category_id' type='text' value='<%= auction.category_id %>' />-->
   <input type='submit' value='Edit' />
 </form>
 
