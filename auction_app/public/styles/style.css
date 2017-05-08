@@ -84,7 +84,7 @@ input[type='submit'] {
 .top {
   text-decoration: none;
   color: #FF822E;
-  padding: 40%;
+  text-align: center;
   text-transform: uppercase;
   text-shadow: 3px 4px #403D39;
 }
@@ -111,4 +111,8 @@ footer {
   }
 }
 
+#map{
+  height: 500%;
+  margin: 500%;
+}
 
