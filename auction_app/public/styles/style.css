@@ -35,7 +35,6 @@ body {
   width: 100%;
   height: 60px;
   background-color: #3898B2;
-  /*background-image: url('/logo.png');*/
 }
 
 .navbar {
@@ -105,3 +104,11 @@ footer {
   color: white;
   text-shadow: 3px 4px red;
 }
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+    width: 100%;
+  }
+}
+
+/*kjdfjkfkfk*/

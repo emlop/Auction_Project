@@ -9,7 +9,11 @@ if(process.env.NODE_ENV === 'development' || !process.env.NODE_ENV) {
     host: 'localhost',
   });
 } else if (process.env.NODE_ENV === 'production') {
-  db = pgp(process.env.DATABASE_URL);
+  db = pgp({
+    database: 'auction_production',
+    port: 5432,
+    host: 'localhost',
+  });
 }
 
 module.exports = db;
