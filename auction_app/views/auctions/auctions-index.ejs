@@ -13,7 +13,7 @@
         <span class='status'><%= auction.status %></span>
       </div>
       <a href='/auctions/<%= auction.id %>'>Go to auction</a>
-      <a href='/auctions/edit/<%= auction.id %>'>Edit auction</a>
+      <a href='/auctions/edit/<%= auction.id %>'>Edit Auction</a>
       <form method='POST' action='/auctions/<%= auction.id %>?_method=DELETE'>
         <input type='submit' value='Delete it' />
       </form>
