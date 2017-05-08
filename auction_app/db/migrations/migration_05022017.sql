@@ -1,4 +1,8 @@
-\connect auction_development
+
+CREATE TABLE IF NOT EXISTS category (
+  id BIGSERIAL PRIMARY KEY,
+  categories VARCHAR(255)
+);
 
 CREATE TABLE IF NOT EXISTS item_type (
   id BIGSERIAL PRIMARY KEY,
@@ -8,7 +12,3 @@ CREATE TABLE IF NOT EXISTS item_type (
   category_id INTEGER REFERENCES category
 );
 
-CREATE TABLE IF NOT EXISTS category (
-  id BIGSERIAL PRIMARY KEY,
-  categories VARCHAR(255)
-);
