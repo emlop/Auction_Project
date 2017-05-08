@@ -30,7 +30,7 @@ app.set('view engine', 'ejs');
 app.use('/static', express.static(path.join(__dirname, 'public')));
 /* setting up logger */
 app.use(logger('dev'));
-// app.use(cookieParser());
+
 /* setting up body-parser */
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -40,13 +40,6 @@ const keySecret = process.env.SECRET_KEY;
 const stripe = require("stripe")(keySecret);
 const RapidAPI = new require('rapidapi-connect');
 const rapid = new RapidAPI('Auction', 'fe12ae8b-57d5-499c-9548-dc9b4c2540d1')
-// app.use(session({
-//   secret: process.env.SECRET_KEY,
-//   resave: false,
-//   saveUninitialized: true
-// }));
-// app.use(passport.initialize());
-// app.use(passport.session());
 
 /* setting up routes */
 app.get('/', function(req, res){
