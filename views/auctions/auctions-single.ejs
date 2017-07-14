@@ -2,25 +2,25 @@
 
 <div class='single-auction'>
   <h3><%= auction.item %></h3>
-  <div class='meta'>
-    <span class='description'><%= auction.description %></span>
-    <span class='status'><%= auction.status %></span>
-    <span class='categories'><%= auction.categories %></span>
-    <form action="/your-server-side-code" method="POST">
-  <script
-    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="pk_test_tt9yYoSnbo3jerG6qXUF1yyM"
-    data-amount="999"
-    data-name="Stripe.com"
-    data-description="Widget"
-    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-    data-locale="auto"
-    data-zip-code="true">
-  </script>
-</form>
 
-  </div>
+    <span class='description'><%= auction.description %></span> <br/>
+    <span class='status'><%= auction.status %></span> <br/>
+    <span class='categories'><%= auction.categories %></span>
+
+  <form action="/your-server-side-code" method="POST">
+    <script
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="pk_test_tt9yYoSnbo3jerG6qXUF1yyM"
+      data-amount="999"
+      data-name="Stripe.com"
+      data-description="Widget"
+      data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+      data-locale="auto"
+      data-zip-code="true">
+    </script>
+  </form>
 </div>
+
 <div id="map"></div>
 
 <script>
@@ -40,6 +40,8 @@
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiTFT-c8uaiy6PX6IEcaLT-sj54LIFp54&callback=initMap">
 </script>
 
-<a href='/auctions' class='back-to'>Back to auction index</a>
+<div class='back-to-auctions'>
+  <a href='/auctions'>Back to all auctions</a>
+</div>
 
 <% include ../partials/end %>

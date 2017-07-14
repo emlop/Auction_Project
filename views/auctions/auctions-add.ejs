@@ -1,16 +1,19 @@
 <% include ../partials/boilerplate %>
 
 <form method='POST' action='/auctions'>
-  <input name='item' type='text' placeholder='Item' />
-  <input name='description' type='text' placeholder='Description' />
-  <input name='status' type='text' placeholder='Status' />
-  <select>
+  <input name='item' type='text' placeholder='Item' /> <br/>
+  <input name='description' type='text' placeholder='Description' /> <br/>
+  <input name='status' type='text' placeholder='Status' /> <br/>
+
+  <select class="selection">
     <option value='categories_id'>Fashion</option>
     <option value='categories_id'>Electronics</option>
     <option value='categories_id'>Toys</option>
     <option value='categories_id'>Auto</option>\
   </select>
+
   <input type='submit' value='Sell it' />
+
 </form>
 
 <% include ../partials/end %>

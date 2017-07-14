@@ -8,10 +8,10 @@
 </div>
 
 <div class='more'>
-<p>Auction App, a marketplace where you sell your old junk or new stuff, we don't judge</p>
+  <p>Auction App, a marketplace where you sell your old junk or new stuff, we don't judge</p>
 </div>
 
-
+<div class="indexsum">
 <p>Items for sell <% auctionItems.forEach(function(item, index) { %>
   <% if (index !== auctionItems.length -1) { %>
     <%= item %>,
@@ -19,9 +19,11 @@
     <%- item -%>
   <% } %>
 <% }) -%>.</p>
+</div>
 
-<a href='/auctions'>Check out all the auctions</a>
-
+<div class="checkauctions">
+  <a href='/auctions'>Check out all the auctions</a>
+</div>
 </div>
 
 <% include ./partials/end.ejs %>

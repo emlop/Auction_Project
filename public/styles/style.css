@@ -1,30 +1,11 @@
-#wrapper {
-  margin: 0 auto;
-  width: 50%;
-}
-
- .hero {
-   margin: 20px 10px;
- }
-
- .hero h1 {
-   margin-bottom: 5px;
- }
-
-p {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 body {
-  background-image: url('http://searchengineland.com/figz/wp-content/seloads/2015/05/ecommerce-shopping-retail-ss-1920.jpg');
-  background-size: cover;
-  display: flex;
+  background-image: url('http://www.diffusio.ca/wp-content/uploads/ecommerce.png');
+  /* display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  box-sizing: border-box;
-  font-size: 24px;
+  box-sizing: border-box; */
+  font-size: 22px;
   text-transform: uppercase;
   line-height: 150%;
   color: #403D39;
@@ -38,8 +19,8 @@ body {
 }
 
 .navbar {
- float: right;
- margin: 15px;
+  float: right;
+  margin: 15px;
 }
 
 .navbar ul li {
@@ -52,16 +33,82 @@ body {
 }
 
 .navbar ul li a:hover{
-    color: #3898B2;
-    background-color: #FF822E;
-    text-decoration: underline;
+  color: #3898B2;
+  background-color: #cca1a4;
+  text-decoration: underline;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  text-align: center;
+  color: #403D39;
+  text-shadow: 3px 4px #cca1a4;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.hero h3 {
+  font-size: 32px;
+  padding-top: 20px;
+}
+
+.more {
+  font-size: 32px;
+  padding-top: 20px;
+}
+
+.indexsum {
+  font-size: 32px;
+  padding-top: 20px;
+}
+
+.checkauctions {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.sell {
+  font-size: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+ .auctions {
+  text-align: center;
+} 
+
+ .listing {
+  font-size: 32px;
+  padding-top: 20px;
+} 
+
+.top {
+  padding-right: 40px;
+  color: #403D39;
+  text-align: right;
+  text-transform: uppercase;
+  text-shadow: 3px 4px #cca1a4;
 }
 
 input[type='text'] {
-  border: none;
-  margin:15px;
+  border: 3px solid #403D39;
+  margin: 15px;
   font-size: 22px;
   padding: 15px;
+  text-align: center;
 }
 
 input[type='submit'] {
@@ -71,38 +118,16 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-.auctions {
-  padding: 25px;
-  line-height: 200%; 
-}
-
-.sell {
-  text-align: center;
-  padding-top: 2%;
-}
-
-.top {
-  text-decoration: none;
-  color: #FF822E;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 3px 4px #403D39;
+select.selection {
+  margin-left: 50px;
 }
 
 .single-auction {
-  padding-top: 5%;
+  font-size: 40px;
   text-align: center;
-  line-height: 250%;
-}
-.back-to {
-  text-align: center;
-  padding-top: 2%;
-}
-
-footer {
-  text-align: center;
-  color: white;
-  text-shadow: 3px 4px red;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 50px;
 }
 
 #map {
@@ -111,12 +136,18 @@ footer {
   margin: auto;
 }
 
+.back-to-auctions {
+  text-align: center;
+  padding-top: 20px;
+}
+/*
+
 @media only screen and (max-width: 768px) {
   body {
     font-size: 12px;
     width: 100%;
   }
-}
+} */
 
 
-
+ 

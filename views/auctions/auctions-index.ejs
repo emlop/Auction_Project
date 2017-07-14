@@ -2,25 +2,38 @@
 
 <a name='top'></a>
 
-
-<a href='/auctions/add' class='sell'>Sell something!</a>
+<div class='sell'>
+  <a href='/auctions/add'>Sell something!</a>
+</div>
 
 <div class='auctions'>
 
   <% auctionData.forEach(function(auction) { %>
+    
     <div class='listing'>
       <h3><%= auction.item %></h3>
+    </div>
+
       <div class='meta'>
         <span class='status'><%= auction.status %></span>
       </div>
-      <a href='/auctions/<%= auction.id %>'>Go to auction</a>
-      <a href='/auctions/edit/<%= auction.id %>'>Edit Auction</a>
+
+      <div class="gotoauction">
+        <a href='/auctions/<%= auction.id %>'>Go to auction</a> <br/>
+      </div>
+
+      <div class="editthisauction">
+        <a href='/auctions/edit/<%= auction.id %>'>Edit Auction</a>
+      </div>
+
       <form method='POST' action='/auctions/<%= auction.id %>?_method=DELETE'>
         <input type='submit' value='Delete it' />
       </form>
-    </div>
-  <% }) %>
-<div>
-<a href='#top' class='top'>Back to top</a>
 
-<% include ../partials/end %>
+<% }) %>
+</div>
+
+<div class='top'>
+  <a href='#top'>Back to top</a>
+</div>
+
