@@ -1,10 +1,5 @@
 body {
   background-image: url('http://www.diffusio.ca/wp-content/uploads/ecommerce.png');
-  /* display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  box-sizing: border-box; */
   font-size: 22px;
   text-transform: uppercase;
   line-height: 150%;
@@ -140,14 +135,3 @@ select.selection {
   text-align: center;
   padding-top: 20px;
 }
-/*
-
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: 12px;
-    width: 100%;
-  }
-} */
-
-
- 
